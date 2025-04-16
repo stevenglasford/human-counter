@@ -25,6 +25,7 @@ After running this script the script will output the events happening in the vid
 
 -- detects when a red light violation occurs. As defined by at least 5 or more people walking across a red light (this indicates that the traffic light needs to be retimed)
 
+![output graph of a single video processed by the counter script](human_counter.jpeg)
 
 
 

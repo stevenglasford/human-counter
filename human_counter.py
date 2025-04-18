@@ -11,7 +11,7 @@ import datetime
 import sys
 import glob
 
-model = YOLO("yolov8m.pt")
+model = YOLO("yolo11x.pt")
 MOVEMENT_THRESHOLD = 20
 PIXELS_PER_FOOT = 5.0
 

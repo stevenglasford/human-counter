@@ -1,0 +1,4 @@
+gpxpy
+opencv-python
+numpy
+matplotlib

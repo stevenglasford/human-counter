@@ -48,3 +48,47 @@ The `aggregate.py` file then combines all of the csv files into several graphs t
 -- a day spread graph of the number of people idling
 
 -- a day spread graph of the number of "red light violations" as defined by 5 or more pedestrians walking through a red light
+
+
+This program can have improved vehicle and object movement detection with the addition of a supplemental gpx file for videos that are in motion (such as a dash cam). To improve the analysis quality create a directory holding both the video and the gpx file (no other files should be present), then the system will pick up the gpx file and Norfair to track items better within the video.
+something like this `python human_counter_b.py myvideo/myvideo.mp4` where my `myvideo/myvideo.gpx` also occurs.
+
+GPX files are not needed, and this software works for stationary videos, and for videos in general that are moving as well, but the gpx file will improve the accuracy
+
+## 📁 Outputs
+
+Each processed video will generate:
+- `video_name.csv` — detailed tabular summary of all counted elements
+- `video_name.png` — visual timeline graph with:
+  - Brown = Idle people  
+  - Blue = Walking people  
+  - Black = Total people  
+  - Red, yellow, green vertical lines = Traffic signals  
+  - Dashed red = Red light violations  
+  - Red + black bars = Buses stuck at red lights  
+  - Grey lines = Vehicle speed  
+  - Brown horizontal = GPX average speed  
+
+## 💻 Requirements
+
+- Python 3.10+
+- PyTorch + Ultralytics' YOLOv8 or YOLOv11
+- OpenCV
+- NumPy
+- Pandas
+- Matplotlib
+- A capable CPU (multi-core) or GPU (for video acceleration)
+- Optional: GPX files for motion filtering and vehicle speed estimation
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+
+# Usage
+
+`python human_counter_b.py myVideo.mp4`
+`python human_counter.py --input /path/to/videos/`
+`python aggregate.py --input /path/to/csvs/`
+
+

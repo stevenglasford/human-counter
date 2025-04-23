@@ -178,3 +178,4 @@ cython_debug/
 *png
 *.pt
 human-track-env
+.gpx

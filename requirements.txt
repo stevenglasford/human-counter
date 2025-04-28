@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Core
 ultralytics==8.0.215       # For YOLOv8/YOLOv11x (pip install ultralytics)
 norfair==1.0.1             # For object tracking
@@ -23,3 +24,9 @@ easyocr                    # Lightweight OCR engine with PyTorch
 # tesseract                # Optional: If using Tesseract OCR (requires system install too)
 
 # Optional GPU acceleration (PyTorch will install CUDA-specific binaries if applicable)
+=======
+gpxpy
+opencv-python
+numpy
+matplotlib
+>>>>>>> 92866cc61a89270142a6883a387ab4a271cdba80

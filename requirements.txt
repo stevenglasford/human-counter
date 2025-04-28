@@ -1,0 +1,25 @@
+# Core
+ultralytics==8.0.215       # For YOLOv8/YOLOv11x (pip install ultralytics)
+norfair==1.0.1             # For object tracking
+opencv-python-headless     # For video frame extraction
+pandas
+numpy
+matplotlib
+
+# GPX Parsing
+gpxpy                      # For reading GPX files
+
+# OSM + geospatial tools
+osmnx                      # To query OpenStreetMap data
+geopy                      # For geodistance computations
+shapely                    # For geometry analysis
+
+# License plate detection
+torch                      # Required by YOLO + ultralytics
+torchvision                # Visualization helpers
+
+# Optional OCR (to read license plates)
+easyocr                    # Lightweight OCR engine with PyTorch
+# tesseract                # Optional: If using Tesseract OCR (requires system install too)
+
+# Optional GPU acceleration (PyTorch will install CUDA-specific binaries if applicable)

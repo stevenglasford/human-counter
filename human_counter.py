@@ -10,8 +10,16 @@ import os
 import datetime
 import sys
 import glob
+import torch
 
-model = YOLO("yolo11x.pt")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Using device: {device}")
+model = YOLO("yolo11x.pt").to(device)  # Ensure model runs on GPU if available
+
+print("Running inference on ")
+print(device)
+print("\n")
+
 MOVEMENT_THRESHOLD = 20
 PIXELS_PER_FOOT = 5.0
 

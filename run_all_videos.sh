@@ -10,7 +10,7 @@ fi
 
 VIDEO_DIR="$1"
 PYTHON_SCRIPT="main_gpu.py"
-MAX_JOBS=5
+MAX_JOBS=2
 
 # Create a log directory
 LOG_DIR="./logs"

@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from ultralytics import YOLO
 from norfair import Detection, Tracker
 from multiprocessing import Pool
+import multiprocessing as mp
 import os
 import datetime
 import sys
@@ -217,7 +218,8 @@ def process_video(video_path):
     return f"Processed {video_path} → {csv_path}, {png_path}"
 
 def run_batch(video_paths):
-    with Pool() as pool:
+    ctx = mp.get_context("spawn")
+    with ctx.Pool() as pool:
         results = pool.map(process_video, video_paths)
     for res in results:
         print(res)

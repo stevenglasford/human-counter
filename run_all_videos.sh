@@ -9,7 +9,7 @@ if [ -z "$1" ]; then
 fi
 
 VIDEO_DIR="$1"
-PYTHON_SCRIPT="main_gpu.py"
+PYTHON_SCRIPT="human_counter.py"
 MAX_JOBS=5
 
 # Create a log directory

@@ -12,6 +12,7 @@ VIDEO_DIR="$1"
 PYTHON_SCRIPT="human_counter.py"
 MAX_JOBS=5
 
+
 # Create a log directory
 LOG_DIR="./logs"
 mkdir -p "$LOG_DIR"

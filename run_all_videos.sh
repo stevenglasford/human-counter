@@ -10,7 +10,7 @@ fi
 
 VIDEO_DIR="$1"
 PYTHON_SCRIPT="human_counter.py"
-MAX_JOBS=5
+MAX_JOBS=3
 
 
 # Create a log directory

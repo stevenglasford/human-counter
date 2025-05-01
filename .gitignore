@@ -175,7 +175,6 @@ cython_debug/
 *mp4
 *MP4
 *csv
-*png
 *.pt
 human-track-env
 .gpx

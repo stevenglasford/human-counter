@@ -1,0 +1,16 @@
+
+TRAFFIC STOP ANALYSIS REPORT
+Video: ../videos/test2/temp_video_244548897681178624.MP4
+GPX: ../videos/test2/Lunch_E_Bike_Ride.gpx
+FPS: 29.97002997002997
+Total Frames Processed: 14902
+Video Start Time: 2025-04-01 12:00:00+00:00
+
+--- DETECTION RESULTS ---
+Total Stops Detected: 1863
+Average Speed During Stops: 0.31 pixels/frame
+Average Visible Traffic Lights at Stop: 0.03
+
+Interpretation:
+- Stops near traffic lights with low average speed likely indicate red light events.
+- Use the GPX coordinates to map high-frequency stop zones for city planning.

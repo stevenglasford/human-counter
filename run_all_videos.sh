@@ -9,7 +9,7 @@ if [ -z "$1" ]; then
 fi
 
 VIDEO_DIR="$1"
-PYTHON_SCRIPT="human_counter_extended.py"
+PYTHON_SCRIPT="human_counter_extended_with_totals_fixed.py"
 MAX_JOBS=1
 
 
